@@ -14,6 +14,7 @@ public class BootBroadcastReceiver extends BroadcastReceiver {
         	if(utils.isEmergencyServiceRunnig()){
         		  Intent serviceIntent = new Intent(context, Location_Msg_Shake.class);       
                   context.startService(serviceIntent);
+//KIRAN
         	}
         	
             //Service    
