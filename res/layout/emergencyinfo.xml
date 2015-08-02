@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE5044" >
+
+    <TextView
+        android:id="@+id/fillall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Fill All Details"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fillall" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="290dp"
+            android:layout_height="293dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/fillall"
+            android:layout_marginBottom="130sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="20sp"
+            android:background="#FFFFFF" >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:background="#ECECEC"
+                android:ems="10"
+                android:singleLine="true"
+                android:hint="Your Friend Name"
+                android:textStyle="bold"
+                android:inputType="textPersonName"
+                android:textColor="#8B0000" />
+
+            <requestFocus />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_alignLeft="@+id/name"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="40dp"
+                android:background="#ECECEC"
+                android:ems="10"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:hint="Emergency Number"
+                android:inputType="phone"
+                android:textColor="#8B0000" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/number"
+                android:layout_alignRight="@+id/number"
+                android:layout_below="@+id/number"
+                android:layout_marginTop="37dp"
+                android:background="#3A558A"
+                android:text="Save"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
